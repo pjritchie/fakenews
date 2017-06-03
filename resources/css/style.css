@@ -1,17 +1,48 @@
-.header{
-  dispaly: flex;
+body{
+  display: block;
+  vertical-align: baseline;
+  height: 100%;
+}
+
+header{
+  display: flex;
   width: 100%;
   border-bottom: 1px solid black;
   padding-left: 30px;
   align-items: center;
-  color: MediumAquamarine
+  position: fixed;
+  height: 80px;
+  font-weight: bold;
+}
+
+header .logo{
+  display: flex;;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+header img{
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.logo span{
+  color: MediumAquamarine;
+  align-items:center;
+}
+
+header nav{
+  padding-right: 80px;
 
 }
 
-.header .logo{
-  display: flex
-  ;
-  font-weight: bold;
-  align-items: center;
+header nav span{
+  display: inline-block;
+  padding: 20px 10px;
+}
 
+header nav span a{
+  color: black;
 }
